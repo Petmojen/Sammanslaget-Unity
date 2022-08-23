@@ -5,17 +5,15 @@ using UnityEngine;
 public class ToolBar:MonoBehaviour {
 
     public GameObject[] tools;
-    //Link script
+    ColorPicker _colorScript;
 
-
-
-    public void ToolPicker() {
+    public void ToolPicker(int choice) {
         for(int i = 0; i < tools.Length; i++) {
-            if(i == 0) {
+            if(i == choice) {
                 tools[i].SetActive(true);
+            } else {
+                
             }
-            
-            //Link script and make them move back
         }
     }
 }
