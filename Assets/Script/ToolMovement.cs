@@ -1,21 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ColorPicker:MonoBehaviour {
+public class ToolMovement:MonoBehaviour {
 
-    public Slider _hsvSlider;
-    public GameObject furniture, _start, _goal;
-    public bool active;
+    public GameObject _start, _goal;
+    public bool active = true;
     public float speed;
 
-    bool atGoal, atStart, setInactive;
-
-    void Awake() {
-        setInactive = true;
-        active = true;
-    }
+    bool atGoal, atStart;
 
     void Update() {
         if(active && !atGoal) {
@@ -30,13 +23,15 @@ public class ColorPicker:MonoBehaviour {
     void MoveTowards(Vector3 target) {
         if(Vector3.Distance(transform.position, target) <= 0.5f) {
             if(active) {
-                atStart = false;
                 atGoal = true;
             } else {
                 atStart = true;
                 atGoal = false;
-                if(setInactive)
+                if(atStart) {
+                    active = true;
+                    atStart = false;
                     gameObject.SetActive(false);
+                }
             }
 
         }
