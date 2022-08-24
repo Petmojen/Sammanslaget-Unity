@@ -10,7 +10,7 @@ public class ToolMovement:MonoBehaviour {
 
     bool atGoal, atStart;
 
-    void Update() {
+    void FixedUpdate() {
         if(active && !atGoal) {
             MoveTowards(_goal.transform.position);
         }
