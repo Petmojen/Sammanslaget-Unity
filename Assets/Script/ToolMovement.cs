@@ -36,6 +36,6 @@ public class ToolMovement:MonoBehaviour {
 
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, target, speed);
+        transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
     }
 }

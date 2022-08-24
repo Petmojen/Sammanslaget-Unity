@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LegsTool : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class LegsTool:MonoBehaviour {
 
-    // Update is called once per frame
-    void Update()
-    {
+    public Sprite[] legChoices;
+    int choiceMade;
+
+    public void ChangeLegs() {
         
     }
 }
