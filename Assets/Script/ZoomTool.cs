@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ZoomTool:MonoBehaviour {
 
+    Slider slider;
     public GameObject drawer;
-    Transform drawerTransform;
+
+    float size;
 
     void Start() {
-        drawerTransform = drawer.GetComponent<Transform>();
+        slider = GetComponent<Slider>();
     }
 
-    void ChangeSize() {
-        
+    public void ChangeSize() {
+        size = slider.value;
+        drawer.transform.localScale = new Vector3(size, size, size);
     }
 
 }
