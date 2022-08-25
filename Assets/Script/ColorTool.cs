@@ -5,16 +5,20 @@ using UnityEngine.UI;
 
 public class ColorTool:MonoBehaviour {
 
-    public RawImage chelf;
+    public RawImage targetObject;
+    public bool alphaOn;
+
+    Color startColor;
     Slider slider;
+    float alpha;
 
     void Start() {
         slider = GetComponent<Slider>();
-        
-        //Debug.Log(Color.RGBToHSV(new Color(140, 98, 57)));
+        startColor = targetObject.color;
     }
 
     void Update() {
-        chelf.color = Color.HSVToRGB(slider.value, 0.85f, 0.85f);
+        if(alphaOn)
+            targetObject.color = Color.HSVToRGB(slider.value, .85f, 1);
     }
 }
