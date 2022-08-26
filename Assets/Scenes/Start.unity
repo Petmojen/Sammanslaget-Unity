@@ -735,7 +735,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Utmana dina kreativa gr\xE4nser och v\xE5ga t\xE4nk nytt. En gammal sliten
     m\xF6bel kan genom lite k\xE4rlek bli fin och unik. \n\nVi vill inspirera till
-    \xE5terbruk, h\xE5llbarhet och visa hur man med enkla medel kan \xE4ndra m\xF6belns
+    \xE5terbruk, h\xE5llbarhet och\n visa hur man med enkla medel kan \xE4ndra m\xF6belns
     uttryck."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 407ef90b2e7ae7844840e1ba2757265c, type: 2}

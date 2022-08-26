@@ -38,4 +38,8 @@ public class ToolMovement:MonoBehaviour {
 
         transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
     }
+
+    public void CloseToolWindow() {
+        active = false;
+    }
 }
