@@ -11,7 +11,6 @@ public class SaveImage:MonoBehaviour {
         infoBox.SetActive(false);
 
         ScreenCapture.CaptureScreenshot("../ChangeYourFurniture.png");
-        ////var t = ScreenCapture.CaptureScreenshotAsTexture(ScreenCapture.StereoScreenCaptureMode.BothEyes);
-        //Debug.Log(Directory.GetDirectoryRoot(""));
+
     }
 }

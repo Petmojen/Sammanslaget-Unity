@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class DoneGame:MonoBehaviour {
-    
+
     public GameObject[] _gameObjects;
     public GameObject roomBackground, drawerRoomPos;
 
@@ -14,6 +14,7 @@ public class DoneGame:MonoBehaviour {
         }
         roomBackground.SetActive(true);
         transform.position = drawerRoomPos.transform.position;
+        transform.localScale = new Vector3(1, 1, 1);
     }
-    
+
 }
